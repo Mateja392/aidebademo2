@@ -38,9 +38,9 @@
     --radius: 0.5rem;
 
     /* AI Automation specific colors */
-    --ai-red: 0 74% 50%;
-    --ai-red-light: 0 74% 60%;
-    --ai-red-dark: 0 74% 40%;
+    --ai-red: 0 119 181;
+    --ai-red-light: 0 137 201;
+    --ai-red-dark: 0 102 154;
     --ai-grey: 0 0% 45%;
     --ai-grey-light: 0 0% 85%;
     --ai-grey-dark: 0 0% 25%;
