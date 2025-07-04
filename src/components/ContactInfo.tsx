@@ -92,9 +92,14 @@ const ContactInfo = () => {
                   <Calendar className="w-6 h-6" />
                 </div>
                 <h3 className="font-semibold mb-2">Schedule Call</h3>
-                <button className="text-white/90 hover:text-white transition-colors">
+                <a 
+                  href="https://calendar.app.google/omeuHycDeiY4fkGDA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/90 hover:text-white transition-colors"
+                >
                   Book a Meeting
-                </button>
+                </a>
               </CardContent>
             </Card>
           </motion.div>
