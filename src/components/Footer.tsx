@@ -84,11 +84,12 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Services</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Industries</h3>
             <ul className="space-y-3">
-              <li><span className="text-gray-300">AI Automation</span></li>
-              <li><span className="text-gray-300">Custom AI Agents</span></li>
-              <li><span className="text-gray-300">Business Process Optimization</span></li>
+              <li><span className="text-gray-300">E-commerce</span></li>
+              <li><span className="text-gray-300">Healthcare</span></li>
+              <li><span className="text-gray-300">Professional Services</span></li>
+              <li><span className="text-gray-300">Manufacturing</span></li>
             </ul>
           </div>
           
