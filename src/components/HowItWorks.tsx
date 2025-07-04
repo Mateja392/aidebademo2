@@ -22,7 +22,7 @@ const HowItWorks = () => {
     {
       step: "01",
       icon: MessageSquare,
-      title: "Discovery Call",
+      title: "Consultation",
       description: "We discuss your business processes and identify automation opportunities"
     },
     {
