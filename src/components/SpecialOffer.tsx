@@ -30,7 +30,7 @@ const SpecialOffer = () => {
         
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
           <div className="flex items-center justify-center mb-4">
-            <span className="text-6xl font-bold">👉</span>
+            <span className="text-6xl font-bold">👇</span>
           </div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">First Two Automations Are 100% FREE</h3>
           <div className="flex items-center justify-center text-lg">
