@@ -66,10 +66,15 @@ const Hero = () => {
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 
-                <button className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-white text-ai-grey-dark rounded-md hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium">
+                <a 
+                  href="https://calendar.app.google/omeuHycDeiY4fkGDA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-white text-ai-grey-dark rounded-md hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
+                >
                   <Calendar className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
                   Schedule a Call
-                </button>
+                </a>
               </motion.div>
             </motion.div>
           </div>
