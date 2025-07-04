@@ -80,12 +80,6 @@ const Footer = () => {
               Belgrade, Serbia
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="mailto:m.mateja003@gmail.com" 
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
-              >
-                <Mail size={20} />
-              </a>
             </div>
           </div>
           
