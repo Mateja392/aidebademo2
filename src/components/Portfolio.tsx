@@ -54,6 +54,13 @@ const Portfolio = () => {
       description: "CRM integration that tracks leads, sends follow-ups, and generates performance reports",
       metrics: "35% increase in sales velocity",
       category: "Sales"
+    },
+    {
+      icon: FileText,
+      title: "Smart Inventory Management",
+      description: "AI-powered stock monitoring system that predicts demand, automates reordering, and prevents stockouts",
+      metrics: "60% reduction in inventory costs",
+      category: "Retail"
     }
   ];
 
