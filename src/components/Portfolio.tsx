@@ -82,10 +82,10 @@ const Portfolio = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {portfolioItems.map((item, index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-gray-200">
+            <motion.div key={index} variants={itemVariants} className="w-full">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-gray-200 w-full">
                 <CardHeader>
                   <div className="w-12 h-12 bg-ai-red/10 flex items-center justify-center rounded-lg text-ai-red mb-3">
                     <item.icon className="w-6 h-6" />
