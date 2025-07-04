@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
 import { Gift, Clock, CheckCircle } from "lucide-react";
-
 const SpecialOffer = () => {
   const containerVariants = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: { 
-      opacity: 1, 
+    hidden: {
+      opacity: 0,
+      scale: 0.95
+    },
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { duration: 0.8 }
+      transition: {
+        duration: 0.8
+      }
     }
   };
-
-  return (
-    <section className="section-container bg-ai-red">
-      <motion.div 
-        className="max-w-4xl mx-auto text-center text-white"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={containerVariants}
-      >
+  return <section className="section-container bg-ai-red">
+      <motion.div className="max-w-4xl mx-auto text-center text-white" initial="hidden" whileInView="visible" viewport={{
+      once: true
+    }} variants={containerVariants}>
         <div className="flex justify-center mb-6">
           <div className="w-20 h-20 bg-white/20 flex items-center justify-center rounded-full">
             <Gift className="w-10 h-10" />
@@ -32,11 +30,9 @@ const SpecialOffer = () => {
         
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
           <div className="flex items-center justify-center mb-4">
-            <span className="text-6xl font-bold">👇</span>
+            <span className="text-6xl font-bold">👉</span>
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            First Three Automations Are 100% FREE
-          </h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">First Two Automations Are 100% FREE</h3>
           <div className="flex items-center justify-center gap-2 text-lg">
             <Clock className="w-5 h-5" />
             <span>During the first month</span>
@@ -69,8 +65,6 @@ const SpecialOffer = () => {
           </div>
         </div>
       </motion.div>
-    </section>
-  );
+    </section>;
 };
-
 export default SpecialOffer;
