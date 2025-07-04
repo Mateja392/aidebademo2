@@ -2,7 +2,6 @@ import { ArrowRight, Bot, Calendar, MessageSquare, Zap } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
   const isMobile = useIsMobile();
   const containerVariants = {
@@ -31,7 +30,6 @@ const Hero = () => {
       }
     }
   };
-  
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -41,12 +39,11 @@ const Hero = () => {
       });
     }
   };
-  
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-ai-grey-dark relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-ai-grey-dark via-ai-grey to-ai-grey-dark"></div>
         
-        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full relative z-10">
+        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full relative z-10 py-[130px]">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>
@@ -56,25 +53,20 @@ const Hero = () => {
                 We help small and mid-sized businesses increase sales and save time by automating repetitive tasks with intelligent AI solutions.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
-                <button 
-                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-ai-red text-white rounded-md hover:bg-ai-red-dark transition-all shadow-lg hover:shadow-xl hover:shadow-red-500/20 flex items-center justify-center group text-sm sm:text-base font-medium"
-                  onClick={e => {
-                    e.preventDefault();
-                    const portfolioSection = document.getElementById('portfolio');
-                    if (portfolioSection) {
-                      portfolioSection.scrollIntoView({
-                        behavior: 'smooth'
-                      });
-                    }
-                  }}
-                >
+                <button className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-ai-red text-white rounded-md hover:bg-ai-red-dark transition-all shadow-lg hover:shadow-xl hover:shadow-red-500/20 flex items-center justify-center group text-sm sm:text-base font-medium" onClick={e => {
+                e.preventDefault();
+                const portfolioSection = document.getElementById('portfolio');
+                if (portfolioSection) {
+                  portfolioSection.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }
+              }}>
                   See Our Work
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 
-                <button 
-                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-white text-ai-grey-dark rounded-md hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
-                >
+                <button className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-white text-ai-grey-dark rounded-md hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium">
                   <Calendar className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
                   Schedule a Call
                 </button>
@@ -115,5 +107,4 @@ const Hero = () => {
       </div>
     </motion.div>;
 };
-
 export default Hero;
