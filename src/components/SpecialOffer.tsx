@@ -33,8 +33,7 @@ const SpecialOffer = () => {
             <span className="text-6xl font-bold">👉</span>
           </div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">First Two Automations Are 100% FREE</h3>
-          <div className="flex items-center justify-center gap-2 text-lg">
-            <Clock className="w-5 h-5" />
+          <div className="flex items-center justify-center text-lg">
             <span>During the first month</span>
           </div>
         </div>
