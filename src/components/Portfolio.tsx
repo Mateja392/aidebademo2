@@ -56,11 +56,11 @@ const Portfolio = () => {
       category: "Sales"
     },
     {
-      icon: Package,
-      title: "Smart Inventory Management",
-      description: "AI-powered stock monitoring system that predicts demand, automates reordering, and prevents stockouts",
-      metrics: "60% reduction in inventory costs",
-      category: "Retail"
+      icon: TrendingUp,
+      title: "Lead Generation Personalization",
+      description: "Automated system that personalizes outreach messages based on prospect data and behavior",
+      metrics: "50% increase in response rates",
+      category: "Marketing"
     }
   ];
 
