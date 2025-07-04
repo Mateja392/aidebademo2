@@ -87,20 +87,20 @@ const ContactInfo = () => {
             viewport={{ once: true }}
           >
             <Card className="text-center hover:shadow-md transition-shadow bg-ai-red text-white">
-              <CardContent className="p-6">
+              <a 
+                href="https://calendar.app.google/omeuHycDeiY4fkGDA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-6"
+              >
                 <div className="w-12 h-12 bg-white/20 flex items-center justify-center rounded-lg mb-3 mx-auto">
                   <Calendar className="w-6 h-6" />
                 </div>
                 <h3 className="font-semibold mb-2">Schedule Call</h3>
-                <a 
-                  href="https://calendar.app.google/omeuHycDeiY4fkGDA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/90 hover:text-white transition-colors"
-                >
+                <p className="text-white/90 hover:text-white transition-colors">
                   Book a Meeting
-                </a>
-              </CardContent>
+                </p>
+              </a>
             </Card>
           </motion.div>
         </div>
