@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Calendar, FileText, MessageCircle, TrendingUp } from "lucide-react";
+import { Mail, Calendar, FileText, MessageCircle, TrendingUp, Package } from "lucide-react";
 
 const Portfolio = () => {
   const containerVariants = {
@@ -56,7 +56,7 @@ const Portfolio = () => {
       category: "Sales"
     },
     {
-      icon: FileText,
+      icon: Package,
       title: "Smart Inventory Management",
       description: "AI-powered stock monitoring system that predicts demand, automates reordering, and prevents stockouts",
       metrics: "60% reduction in inventory costs",
